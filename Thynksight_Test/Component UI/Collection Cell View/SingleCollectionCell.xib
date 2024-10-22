@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SingleCollectionCell_ID" id="gTV-IL-0wX" customClass="SingleCollectionCell" customModule="Thynksight_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pepper" translatesAutoresizingMaskIntoConstraints="NO" id="bRW-Wn-n2m">
+                        <rect key="frame" x="23" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="9sG-PI-TfV"/>
+                            <constraint firstAttribute="width" constant="50" id="XJ6-RV-fAZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aa6-Q9-DeP">
+                        <rect key="frame" x="0.0" y="52" width="96" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aa6-Q9-DeP" secondAttribute="bottom" constant="2" id="7Eb-l4-2dA"/>
+                <constraint firstItem="aa6-Q9-DeP" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="C7t-EQ-u0Z"/>
+                <constraint firstAttribute="trailing" secondItem="aa6-Q9-DeP" secondAttribute="trailing" id="Hnq-Q1-bYJ"/>
+                <constraint firstItem="aa6-Q9-DeP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NBP-I3-A5p"/>
+                <constraint firstItem="bRW-Wn-n2m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NzN-kT-krw"/>
+                <constraint firstItem="aa6-Q9-DeP" firstAttribute="top" secondItem="bRW-Wn-n2m" secondAttribute="bottom" constant="2" id="VwM-Di-M7Z"/>
+                <constraint firstItem="bRW-Wn-n2m" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bn7-S0-qJ6"/>
+            </constraints>
+            <size key="customSize" width="96" height="66"/>
+            <connections>
+                <outlet property="imgIngredient" destination="bRW-Wn-n2m" id="B6z-iv-yb4"/>
+                <outlet property="lblIngredient" destination="aa6-Q9-DeP" id="8le-l6-Ju7"/>
+            </connections>
+            <point key="canvasLocation" x="79.389312977099237" y="23.943661971830988"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Pepper" width="700" height="700"/>
+    </resources>
+</document>
